@@ -20,7 +20,7 @@ body{
 
 img{
   height: 4em;
-  margin: auto 1em auto 0;
+  margin: 0 1em 0.7em 0;
   display: inline-block;
 }
 
@@ -30,16 +30,30 @@ p{
 
 .inline{
   display: inline-block;
+  width: 80%;
 }
 
-.container{
 
+h1,h3{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
 }
 
-.menu-container{
-
+h1{
+  font-size: 1.5em;
 }
 
+h3{
+  font-size: 1em;
+  font-style: italic;
+}
+
+h4{
+  text-align: center;
+  margin-top: 0.2em;
+}
 ul{
   padding: 0;
   max-width: 13.5em;
@@ -65,12 +79,28 @@ li:hover, li.active{
 
 .streamerList{
   position: relative;
-  max-width: 90%;
+  max-width: 60%;
+
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 1em;
+  padding: 1em 1em 1em 1em;
+
+  background-color: rgb(41, 133, 200);
+
+  box-shadow: 0.1em 0.1em 0.08em #2d6a85;
 }
 
 .streamer-online{
   border-left: 0.6em solid rgb(9, 163, 52);
+}
+
+.streamer-offline{
+  border-left: 0.6em solid rgb(110, 110, 110);
+  color: rgb(191, 186, 186);
+}
+
+.streamer-notExist{
+  border-left: 0.6em solid rgb(255, 0, 0);
+  color: rgb(191, 186, 186);
 }
